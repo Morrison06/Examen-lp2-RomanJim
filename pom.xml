@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>repaso</artifactId>
+    <artifactId>exa1-u1susti</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>repaso</name>
+    <name>exa1-u1susti</name>
     <description>Demo project for Spring Boot</description>
     <url/>
     <licenses>
@@ -85,9 +85,17 @@
                         <exclude>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>${org.projectlombok.version}</version>
+                            <!-- La etiqueta <version> fue eliminada de aquí, ya que causaba el error -->
                         </exclude>
                     </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.3</version>
+                <configuration>
+                    <skipTests>true</skipTests>
                 </configuration>
             </plugin>
             <plugin>

@@ -1,11 +1,10 @@
 package pe.edu.upeu.exa1lp2.mappers.base;
 
-
 import java.util.List;
 
 public interface BaseMappers<E, D> {
-    D toDTO(E entity);
+    D toDto(E entity); // Corregido a minúsculas
     E toEntity(D dto);
-    List<D> toDTOs(List<E> list);
+    List<D> toDtoList(List<E> list); // Corregido a un nombre más estándar
     List<E> toEntityList(List<D> list);
 }
